@@ -1,6 +1,5 @@
-[![QuickBox](https://github.com/QuickBox/quickbox_github_assets/blob/master/img/quickbox2.png "QuickBox")](https://quickbox.io)
+[![QuickBox](https://img.dssbox.com/logo.png "DssBox")](https://Dssbox.com)
 
-### Join us on our Chat Server at [chat.quickbox.io](https://chat.quickbox.io/) !!!
 
 
 ## To make use of the GitHub repo (all future updates posted here!)
@@ -17,8 +16,8 @@ rm -rf ~/QuickBox
 ### If you are already located on the GitHub repo as of v2.4.9, run the following to easily update to the new v2.5.+ QuickBox/QB repo:
 ```
 rm -rf /etc/QuickBox; \
-git clone https://github.com/QuickBox/QB /etc/QuickBox; \
-wget -O /usr/local/bin/quickbox/system/updateQuickBox https://raw.githubusercontent.com/QuickBox/QB/master/packages/system/updateQuickBox; \
+git clone https://github.com/DssboxSSA/QB /etc/QuickBox; \
+wget -O /usr/local/bin/quickbox/system/updateQuickBox https://github.com/DssboxSSA/QB/master/packages/system/updateQuickBox; \
 dos2unix $(find /usr/local/bin/quickbox -type f) && chmod +x $(find /usr/local/bin/quickbox -type f); \
 updateQuickBox
 ```
@@ -34,7 +33,7 @@ This simply means you do not have Deluge installed, there is no further action f
 ### [2]:
 grab the current/future QuickBox repository with the following:
 ```
-git clone https://github.com/QuickBox/QB /etc/QuickBox
+git clone https://github.com/DssboxSSA/QB /etc/QuickBox
 ```
 
 >If you receive an error `/etc/QuickBox already exists` please perform an `rm -rf /etc/QuickBox`. You can then run the `git clone` command above to proceed.
@@ -61,13 +60,13 @@ updateQuickBox
 
 ## Script status
 
-[![Version 2.5.1-production](https://img.shields.io/badge/version-2.5.1-674172.svg?style=flat-square)](https://quickbox.io/readme-md/) [![GNU v3.0 License](https://img.shields.io/badge/license-GNU%20v3.0%20License-blue.svg?style=flat-square)](https://quickbox.io/readme-md/)
+[![Version 2.5.1-production](https://img.shields.io/badge/version-2.5.1-674172.svg?style=flat-square)][![GNU v3.0 License](https://img.shields.io/badge/license-GNU%20v3.0%20License-blue.svg?style=flat-square)]
 
 #### Ubuntu Builds
- [![Ubuntu 15.10 Passing](https://img.shields.io/badge/Ubuntu%2015.10-passing-brightgreen.svg?style=flat-square)](https://quickbox.io/readme-md/) [![Ubuntu 16.04 Passing](https://img.shields.io/badge/Ubuntu%2016.04-passing-brightgreen.svg?style=flat-square)](https://quickbox.io/readme-md/) [![Ubuntu 16.10 Failing](https://img.shields.io/badge/Ubuntu%2016.10-failing-brightred.svg?style=flat-square)](https://quickbox.io/readme-md/)
+ [![Ubuntu 15.10 Passing](https://img.shields.io/badge/Ubuntu%2015.10-passing-brightgreen.svg?style=flat-square)](https://quickbox.io/readme-md/) [![Ubuntu 16.04 Passing](https://img.shields.io/badge/Ubuntu%2016.04-passing-brightgreen.svg?style=flat-square)](https://quickbox.io/readme-md/) [![Ubuntu 16.10 Failing](https://img.shields.io/badge/Ubuntu%2016.10-failing-brightred.svg?style=flat-square)]
 
 #### Debian Builds -- SUPPORT DISCONTINUED [USE Ubuntu 16.04]
-[![Debian 8 Null](https://img.shields.io/badge/Debain%208-null-black.svg?style=flat-square)](https://quickbox.io/readme-md/)
+[![Debian 8 Null](https://img.shields.io/badge/Debain%208-null-black.svg?style=flat-square)]https://quickbox.io/readme-md/)
 
 ---
 
@@ -85,7 +84,7 @@ grsec is built into OVH's custom kernel and it absolutely wrecks havoc when usin
 > Please understand that we do not want to push this project as a means to supply a commercially used product, ie; seedbox provider - so keep this in mind - only if you wish to sale slots on your server. Though it is very multi-user friendly... it is also not free of it's faults due to it's high amount of capabilities and being publicly available. This is a community based project that is a measure of goodwill to be given to such an outspoken and freethinking community.
 
 ### A Preview of Quick Box
-![QuickBox Preview - Smoked Theme](https://github.com/QuickBox/quickbox_github_assets/blob/master/img/quickbox_preview-theme_smoked.gif "QuickBox Preview - Smoked Theme")
+![Preview - Smoked Theme](https://github.com/QuickBox/quickbox_github_assets/blob/master/img/quickbox_preview-theme_smoked.gif "QuickBox Preview - Smoked Theme")
 
 ---
 
@@ -168,7 +167,7 @@ After that access your box using a SSH client, like PuTTY.
 **Run the following command to grab our latest stable release ...**
 ```
 apt-get -yqq update; apt-get -yqq upgrade; apt-get -yqq install git lsb-release; \
-git clone https://github.com/QuickBox/QB /etc/QuickBox &&
+git clone https://github.com/DssboxSSA/QB /etc/QuickBox &&
 bash /etc/QuickBox/setup/quickbox-setup
 ```
 
@@ -179,7 +178,7 @@ bash /etc/QuickBox/setup/quickbox-setup
 ```
 mkdir /install/ && touch /install/.developer.lock; \
 apt-get -yqq update; apt-get -yqq upgrade; apt-get -yqq install git lsb-release; \
-git clone --branch "development" https://github.com/QuickBox/QB /etc/QuickBox &&
+git clone --branch "development" https://github.com/DssboxSSA/QB /etc/QuickBox &&
 bash /etc/QuickBox/setup/quickbox-setup
 ```
 
