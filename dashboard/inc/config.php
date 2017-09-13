@@ -2,7 +2,7 @@
 session_destroy();
 include '/srv/rutorrent/php/util.php';
 include ($_SERVER['DOCUMENT_ROOT'].'/widgets/class.php');
-$version = "v2.5.2";
+$version = "v1.01";
 error_reporting(E_ERROR);
 $master = file_get_contents('/srv/rutorrent/home/db/master.txt');
 $master=preg_replace('/\s+/', '', $master);
@@ -49,11 +49,11 @@ function search($data, $find, $end) {
 define('HTTP_HOST', preg_replace('~^www\.~i', '', $_SERVER['HTTP_HOST']));
 
 $panel = array(
-    'name'              => 'QuickBox Seedbox',
-    'author'            => 'Everyone that contributes to the open QuickBox project!',
+    'name'              => 'DssBox Seedbox',
+    'author'            => ' ',
     'robots'            => 'noindex, nofollow',
-    'title'             => 'Quickbox Dashboard',
-    'description'       => 'QuickBox is an open-source seedbox project that is developed and maintained by anyone who so choses to provide time and energy. For more QuickBox, checkout https://plaza.quickbox.io',
+    'title'             => 'DssBox Seedbox Dashboard',
+    'description'       => 'DssBox Seedbox',
     'active_page'       => basename($_SERVER['PHP_SELF']),
 );
 
