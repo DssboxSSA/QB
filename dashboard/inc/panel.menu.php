@@ -15,7 +15,7 @@
           <li>
             <div class="btn-group">
               <button type="button" class="btn btn-logged">
-                <a href="#" class="label label-warning" style="">You are on the QuickBox Development Repo</a>
+                <a href="#" class="label label-warning" style="">You are on the Development Repo</a>
               </button>
             </div>
           </li>
@@ -30,8 +30,7 @@
                 <div role="tabpanel">
                   <!-- Nav tabs -->
                   <ul class="nav nav-tabs nav-justified" role="tablist">
-                    <li class="active"><a data-target="#quickplus" data-toggle="tab">QuickBox+</a></li>
-                    <li><a data-target="#chat" data-toggle="tab">Chat</a></li>
+                    <li class="active"><a data-target="#quickplus" data-toggle="tab">Dssbox+</a></li>
                     <li><a data-target="#dashadjust" data-toggle="tab">Dashboard</a></li>
                   </ul>
 
@@ -43,35 +42,23 @@
                           <div class="row">
                             <div class="col-xs-12">
                               <h5>QuickBox :: <span style="color: #fff;text-shadow: 0px 0px 6px #fff;"><?php echo "$version"; ?></span></h5>
-                              <small><a href="https://quickbox.io/readme-md/" target="_blank">README.md</a></small>
-                              <small><a href="https://github.com/QuickBox/QB/compare/v2.5.1...<?php echo $version; ?>" target="_blank">CHANGELOG</a></small>
-                            </div>
+                              </div>
                           </div>
                         </li>
 
                         <li class="list-group-item">
                           <div class="row">
                             <div class="col-xs-12">
-                              <h5>QuickBox.IO</h5>
+                              <h5>Dssbox</h5>
                             </div>
                             <div class="col-xs-12">
-                              <div class="col-xs-12 col-md-6" style="padding: 0">
-                                <ul style="padding-left: 5px">
-                                <li><small><a href="https://plaza.quickbox.io/categories" target="_blank" alt="View all QuickBox Community Categories">Plaza</a></small></li>
-                                <li><small><a href="https://quickbox.io/faq" target="_blank" alt="QuickBox FAQs">FAQs</a></small></li>
-                                </ul>
-                              </div>
-                              <div class="col-xs-12 col-md-6" style="padding: 0">
-                                <ul style="padding-left: 5px">
-                                <li><small><a href="https://quickbox.io/wiki" target="_blank" alt="QuickBox Wiki - How-to's, Tips and Tricks">Wiki</a></small></li>
-                                <li><small><a href="https://plaza.quickbox.io/c/quickbox-support" target="_blank"><?php echo T('ISSUE_REPORT_TXT'); ?></a></small></li>
                                 </ul>
                               </div>
                             </div>
                           </div>
                         </li>
                       </ul>
-                      <!--a class="btn-more" href="">View More QuickBox <i class="fa fa-long-arrow-right"></i></a-->
+                      
                     </div><!-- tab-pane -->
 
                     <div role="tabpanel" class="tab-pane" id="chat">
@@ -81,13 +68,7 @@
                             <div class="col-xs-2">
                               <i class="fa fa-comment"></i>
                             </div>
-                            <div class="col-xs-10">
-                              <h5><?php echo T('JOIN_US_TXT'); ?></h5>
-                              <small style="color:#fff"><strong style="color: #4CD4B0">host:</strong> chat.quickbox.io</small>
-                              <small style="color:#fff"><strong style="color: #4CD4B0">chan:</strong> #QB-Support</small>
-                              <small style="margin-top:15px;"><a href="https://chat.quickbox.io/channel/QB-Support" class="label label-success" target="_blank"><?php echo T('CHAT_CONNECT_TXT'); ?></a></small>
                             </div>
-                          </div>
                         </li>
                       </ul>
                     </div><!-- tab-pane -->
