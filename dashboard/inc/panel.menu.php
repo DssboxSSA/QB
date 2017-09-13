@@ -46,42 +46,8 @@
                           </div>
                         </li>
 
-                        <li class="list-group-item">
-                          <div class="row">
-                            <div class="col-xs-12">
-                              <h5>Dssbox</h5>
-                            </div>
-                            <div class="col-xs-12">
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                      
-                    </div><!-- tab-pane -->
-
-                    <div role="tabpanel" class="tab-pane" id="chat">
-                      <ul class="list-group notice-list">
-                        <li class="list-group-item" style="padding-top: 10px;">
-                          <div class="row">
-                            <div class="col-xs-2">
-                              <i class="fa fa-comment"></i>
-                            </div>
-                            </div>
-                        </li>
-                      </ul>
-                    </div><!-- tab-pane -->
-
-                    <div role="tabpanel" class="tab-pane" id="dashadjust">
-                      <ul class="list-group">
-                        <li class="list-group-item">
-                          <div class="row">
-                            
-                             
-                            </div>
-                          </div>
-                        </li>
+                        
+                   
                       </ul>
 
                     </div>
