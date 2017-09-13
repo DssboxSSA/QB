@@ -41,7 +41,7 @@
                         <li class="list-group-item">
                           <div class="row">
                             <div class="col-xs-12">
-                              <h5>QuickBox :: <span style="color: #fff;text-shadow: 0px 0px 6px #fff;"><?php echo "$version"; ?></span></h5>
+                              <h5>DssBox :: <span style="color: #fff;text-shadow: 0px 0px 6px #fff;"><?php echo "$version"; ?></span></h5>
                               </div>
                           </div>
                         </li>
@@ -77,29 +77,8 @@
                       <ul class="list-group">
                         <li class="list-group-item">
                           <div class="row">
-                            <div class="col-xs-12">
-                              <div class="col-xs-12 col-md-6" style="padding: 0">
-                                <?php $language = array();
-                                $language[] = array('file' => 'lang_dk', 'title' =>'Danish');
-                                $language[] = array('file' => 'lang_en', 'title' =>'English');
-                                $language[] = array('file' => 'lang_fr', 'title' =>'French');
-                                $language[] = array('file' => 'lang_de', 'title' =>'German'); { ?>
-                                <h5><?php echo T('LANG_SELECT'); ?></h5>
-                                <?php foreach($language as $lang) { ?>
-                                  <small><a href='?langSelect-<?php echo $lang['file'] ?>=true'><img class='lang-flag' src='lang/flag_<?php echo $lang['file'] ?>.png' /><?php echo $lang['title'] ?></a></small>
-                                <?php } ?>
-                                <?php } ?>
-                              </div>
-                              <div class="col-xs-12 col-md-6" style="padding: 0">
-                              <?php $option = array();
-                              $option[] = array('file' => 'defaulted', 'title' =>'Defaulted');
-                              $option[] = array('file' => 'smoked', 'title' =>'Smoked'); { ?>
-                                <h5><?php echo T('THEME_SELECT'); ?></h5>
-                                <?php foreach($option as $theme) { ?>
-                                  <small><a href="javascript:void()" data-toggle="modal" data-target="#themeSelect<?php echo $theme['file'] ?>Confirm"><img class='lang-flag' src='img/themes/opt_<?php echo $theme['file'] ?>.png' /><?php echo $theme['title'] ?></a></small>
-                                <?php } ?>
-                              <?php } ?>
-                              </div>
+                            
+                             
                             </div>
                           </div>
                         </li>
