@@ -59,7 +59,7 @@ function _intro() {
   echo "$(lsb_release -a)"
   echo
   if [[ ! "$DISTRO" =~ ("Ubuntu") ]]; then
-    echo "$DISTRO: ${alert} It looks like you are running $DISTRO, which is not supported by QuickBox ${normal} "
+    echo "$DISTRO: ${alert} It looks like you are running $DISTRO, which is not supported by this script ${normal} "
     echo 'Exiting...'
     exit 1
   elif [[ ! "$CODENAME" =~ ("xenial"|"wily") ]]; then
@@ -86,7 +86,7 @@ function _checkkernel() {
   if [[ -n $grsec ]]; then
     echo -e "Your server is currently running with kernel version: $(uname -r)"
     echo -e "Kernels with ${bold}grsec${normal} are not supported"
-    echo -ne "${bold}${yellow}Would you like QuickBox to install the distribution kernel?${normal} (Default: ${green}${bold}Y${normal}) "; read input
+    echo -ne "${bold}${yellow}Would you like DSSbox SeedBox to install the distribution kernel?${normal} (Default: ${green}${bold}Y${normal}) "; read input
       case $input in
         [yY] | [yY][Ee][Ss] | "" ) kernel=yes; echo "Your distribution's default kernel will be installed. A reboot will be ${bold}required${normal}."  ;;
         [nN] | [nN][Oo] ) echo "Installer will not continue. Exiting ... "; exit 0 ;;
@@ -164,7 +164,7 @@ function _askpartition() {
   if [[ $quota == yes ]]; then
   echo
   echo "##################################################################################"
-  echo "#${bold} By default the QuickBox script will initiate a build using ${green}/${normal} ${bold}as the${normal}"
+  echo "#${bold} By default the DSSbox SeedBox script will initiate a build using ${green}/${normal} ${bold}as the${normal}"
   echo "#${bold} primary partition for mounting quotas.${normal}"
   echo "#"
   echo "#${bold} Some providers, such as OVH and SYS force ${green}/home${normal} ${bold}as the primary mount ${normal}"
@@ -242,13 +242,13 @@ function _askservices() {
 function _askdashtheme() {
   echo -e "1) QuickBox - ${green}smoked${normal} :: Dark theme"
   echo -e "2) QuickBox - ${green}defaulted${normal} :: Light theme"
-  echo -ne "${bold}${yellow}Pick your QuickBox Dashboard Theme${normal} (Default ${green}1${normal}): "; read version
+  echo -ne "${bold}${yellow}Pick your Dashboard Theme${normal} (Default ${green}1${normal}): "; read version
   case $version in
     1 | "") dash_theme=smoked  ;;
     2) dash_theme=defaulted  ;;
     *) dash_theme=smoked ;;
   esac
-  echo "We will be using QuickBox Theme : ${green}$dash_theme${normal}"
+  echo "We will be using Theme : ${green}$dash_theme${normal}"
   echo
 }
 
@@ -311,7 +311,7 @@ function _adduser() {
 
 # install ffmpeg question (10)
 function _askffmpeg() {
-  echo -ne "${bold}${yellow}Would you like to install ffmpeg? (Used for screenshots)${normal} [${green}y${normal}]es or [n]o: "; read responce
+  echo -ne "${bold}${yellow}Would you like to install ffmpeg? (Used for screenshots)${normal} [y]es or [${green}n${normal}]o: "; read responce
   case $responce in
     [yY] | [yY][Ee][Ss] | "" ) ffmpeg=yes ;;
     [nN] | [nN][Oo] ) ffmpeg=no ;;
@@ -400,8 +400,8 @@ function _updates() {
   fi
 
   if [[ -e /etc/ssh/sshd_config ]]; then
-    echo "Port 4747" /etc/ssh/sshd_config >> /dev/null 2>&1
-    sed -i 's/Port 22/Port 4747/g' /etc/ssh/sshd_config
+    echo "Port 4646" /etc/ssh/sshd_config >> /dev/null 2>&1
+    sed -i 's/Port 22/Port 4646/g' /etc/ssh/sshd_config
     #sed -i 's/SendEnv LANG LC_*/#SendEnv LANG LC_*/g' /etc/ssh/ssh_config
     #sed -i 's/AcceptEnv LANG LC_*/#AcceptEnv LANG LC_*/g' /etc/ssh/sshd_config
     service ssh restart >>"${OUTTO}" 2>&1
